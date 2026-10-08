@@ -1,0 +1,5 @@
+ef0bc05 reset: moving to ef0bc05
+e5b5658 commit: feat: add player movement
+ef0bc05 commit: docs: actualiza avances verificados de casos 01 y 02
+9081200 commit: chore: habilita entrada compatible con la guía
+5a67da0 commit: docs: registra simulación de base de Feature y corrección
