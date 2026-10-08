@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var roots=UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects(); var missing=0; foreach(var root in roots) foreach(var tr in root.GetComponentsInChildren<UnityEngine.Transform>(true)) missing+=UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(tr.gameObject); return new { testedBranch=\"main\", scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, menu=GameHUD.Instance.menuPanel.activeSelf, hasKey=GameManager.Instance.HasKey, puzzleSolved=UnityEngine.Object.FindAnyObjectByType<PuzzleManager>().IsSolved, chestOpen=UnityEngine.Object.FindAnyObjectByType<ChestController>().IsOpen, doorOpen=UnityEngine.Object.FindAnyObjectByType<DoorController>().IsOpen, initializationCount=GameManager.Instance.InitializationCount, missingScripts=missing };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "testedBranch": "main",
+        "scene": "Assets/Scenes/MainScene.unity",
+        "menu": true,
+        "hasKey": false,
+        "puzzleSolved": false,
+        "chestOpen": false,
+        "doorOpen": false,
+        "initializationCount": 1,
+        "missingScripts": 0
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
