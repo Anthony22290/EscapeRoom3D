@@ -11,6 +11,8 @@ Proyecto de laboratorio de Git, GitHub, Visual Studio Code y Unity.
 
 Los casos colaborativos de esta ejecución se practicarán como simulaciones individuales, por solicitud del usuario. Los commits no acreditan participación de los demás integrantes.
 
+Caso 05, copia B (simulación individual): Anthony realiza ambos papeles de la práctica; los nombres del equipo se conservan como información del proyecto.
+
 ## Objetivo
 
 Explorar una habitación, resolver un código, abrir un cofre, obtener una llave y abrir la puerta de salida.
