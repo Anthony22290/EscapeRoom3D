@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    [SerializeField] private float interactionDistance = 2f;
+    [SerializeField] private float interactionDistance = 2.5f;
+    [SerializeField] private Camera playerCamera;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) TryInteract();
+        if (GameHUD.IsModalOpen) return;
+        IInteractable target = FindTarget();
+        string prompt = target is IInteractionPrompt named ? named.Prompt : "";
+        if (GameHUD.Instance != null) GameHUD.Instance.SetPrompt(prompt);
+        if (Input.GetKeyDown(KeyCode.E) && target != null) target.Interact();
     }
 
-    private void TryInteract()
+    private IInteractable FindTarget()
     {
-        Debug.Log("Buscando objeto interactuable...");
+        if (playerCamera == null) return null;
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        return Physics.Raycast(ray, out RaycastHit hit, interactionDistance)
+            ? hit.collider.GetComponentInParent<IInteractable>() : null;
     }
 }

@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public bool HasKey { get; private set; }
+    public bool GameCompleted { get; private set; }
     public int InitializationCount { get; private set; }
 
     private void Awake()
@@ -33,5 +34,10 @@ public class GameManager : MonoBehaviour
     public void ObtainKey()
     {
         HasKey = true;
+    }
+
+    public void CompleteEscape()
+    {
+        if (HasKey) GameCompleted = true;
     }
 }
