@@ -7,7 +7,7 @@
     "result": {
       "status": "building",
       "buildId": "build_b63595b0ab02",
-      "elapsedMs": 31192
+      "elapsedMs": 152766
     },
     "target": {
       "host": "127.0.0.1",

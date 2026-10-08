@@ -112,3 +112,6 @@ InitTestScene*.unity*
 
 # Archivo generado de la simulación del caso 13
 /TempLaboratorio/
+
+# Performance Testing writes these temporary resources when building.
+/Assets/Resources/PerformanceTestRun*.json*
