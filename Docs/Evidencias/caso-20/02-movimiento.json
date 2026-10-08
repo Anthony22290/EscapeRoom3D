@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var p=UnityEngine.Object.FindAnyObjectByType<PlayerController>(); var before=p.transform.position; var cc=p.GetComponent<UnityEngine.CharacterController>(); cc.enabled=false; p.transform.SetPositionAndRotation(new UnityEngine.Vector3(-4.65f,1.05f,.5f),UnityEngine.Quaternion.identity); cc.enabled=true; typeof(PlayerController).GetField(\"pitch\",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).SetValue(p,0f); return new { movementPosition=before.ToString(), poseSetForRaycast=true };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "movementPosition": "(3.05, 1.04, 4.30)",
+        "poseSetForRaycast": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return new { hasKey=GameManager.Instance.HasKey, completed=GameManager.Instance.GameCompleted, solved=UnityEngine.Object.FindAnyObjectByType<PuzzleManager>().IsSolved, chestOpen=UnityEngine.Object.FindAnyObjectByType<ChestController>().IsOpen, chestUnlocked=UnityEngine.Object.FindAnyObjectByType<ChestController>().Unlocked, menu=GameHUD.Instance.menuPanel.activeSelf, victory=GameHUD.Instance.victoryPanel.activeSelf, initializeCount=GameManager.Instance.InitializationCount };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "hasKey": false,
+        "completed": false,
+        "solved": false,
+        "chestOpen": false,
+        "chestUnlocked": false,
+        "menu": true,
+        "victory": false,
+        "initializeCount": 1
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
