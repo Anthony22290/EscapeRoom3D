@@ -27,7 +27,7 @@ Repositorio: https://github.com/Anthony22290/EscapeRoom3D. Unity 6000.5.6f1. Esc
 | 17 | Regresión publicada en la puerta revertida sin reescribir historia | caso-17; 38fdf48 revertido por 330347b, ángulo 0 antes y 90 después. CLI porque el menú VS Code no ofrece Revert |
 | 18 | Commit recuperado mediante reflog tras borrar una rama local | caso-18; 1c03d99 recuperado en codex/lab-recovered e integrado; archivo y hash verificados |
 | 19 | Solo la validación corregida se integra mediante Cherry Pick de VS Code | caso-19; 964643e → f29a392; código vacío rechazado y archivos experimentales ausentes de Dev en esa etapa |
-| 20 | Juego completo probado; flujo Feature → PR → Dev → PR → main | caso-20; revisión y corrección individuales explícitas; no se atribuye una aprobación independiente |
+| 20 | Juego completo probado y build Windows correcto; PR #1 a Dev y PR #2 a main integrados | caso-20; revisión y corrección individuales explícitas, capturas reales y comprobación de main. No se atribuye aprobación independiente |
 
 ## Método y desviaciones
 
@@ -47,5 +47,9 @@ Cada carpeta Docs/Evidencias/caso-NN contiene detalles, reflexiones y límites d
 
 ## Límites de la entrega
 
+PR de Feature a Dev: https://github.com/Anthony22290/EscapeRoom3D/pull/1. PR de Dev a main: https://github.com/Anthony22290/EscapeRoom3D/pull/2. El comentario útil y la corrección 311b19a son visibles en el primero. Los merges conservan el historial. Ejecutable local completo en Builds/Windows; build correcto con Burst AOT desactivado en Windows y una advertencia de Pipeline no habilitado en Player. Las pruebas funcionales se ejecutaron en el Editor; el método exacto está en caso-20. Se utiliza un PR adicional de documentación para incorporar las evidencias tomadas después del merge a main.
+
 Se practicaron los 20 casos. No se fabrica participación de compañeros, aprobación independiente ni capturas históricas no tomadas. La versión utilizada es 6000.5.6f1; no se conoce una versión distinta exigida por el docente. El tag v1.0 y el documento/PDF de evidencias son condicionales en la guía y no han sido solicitados por el docente. Las reflexiones y capturas están organizadas en el repositorio.
+
+Docs/Reflexiones.md responde todas las preguntas numeradas de los 20 casos; Docs/Entrega.md reúne controles, rutas y lista de comprobación. Las capturas 06 y 07 de caso-01 verifican Force Text y .gitignore después de la entrega; no se atribuyen a la creación inicial.
 
