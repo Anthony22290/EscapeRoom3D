@@ -8,8 +8,7 @@ public class OldDoorController : MonoBehaviour
     public void OpenDoor()
     {
         if (IsOpen) return;
-        // Caso 17: regresión deliberada que se deshará con Revert.
-        transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(0f, openingAngle, 0f);
         IsOpen = true;
         Debug.Log("Door opened");
     }
