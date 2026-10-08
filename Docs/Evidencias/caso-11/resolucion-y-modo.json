@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return new { width=UnityEditor.PlayerSettings.defaultScreenWidth, height=UnityEditor.PlayerSettings.defaultScreenHeight, mode=UnityEditor.PlayerSettings.fullScreenMode.ToString(), native=UnityEditor.PlayerSettings.defaultIsNativeResolution };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "width": 1280,
+        "height": 720,
+        "mode": "FullScreenWindow",
+        "native": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

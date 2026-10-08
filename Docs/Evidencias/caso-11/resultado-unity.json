@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEditor.PlayerSettings.defaultScreenWidth=1280; UnityEditor.PlayerSettings.defaultScreenHeight=720; UnityEditor.AssetDatabase.SaveAssets(); UnityEditor.SettingsService.OpenProjectSettings(\"Project/Player\"); return new {width=UnityEditor.PlayerSettings.defaultScreenWidth,height=UnityEditor.PlayerSettings.defaultScreenHeight};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
