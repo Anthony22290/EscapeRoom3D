@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var d=UnityEngine.Object.FindAnyObjectByType<DoorController>(); return new { gameCompleted=GameManager.Instance.GameCompleted, hasKey=GameManager.Instance.HasKey, doorOpen=d.IsOpen, doorAngle=d.transform.localEulerAngles.y, victoryPanel=GameHUD.Instance.victoryPanel.activeSelf, initializationCount=GameManager.Instance.InitializationCount, colliderDisabled=!d.GetComponent<UnityEngine.Collider>().enabled };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "gameCompleted": true,
+        "hasKey": true,
+        "doorOpen": true,
+        "doorAngle": 90,
+        "victoryPanel": true,
+        "initializationCount": 1,
+        "colliderDisabled": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

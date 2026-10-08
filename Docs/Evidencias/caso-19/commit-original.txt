@@ -1,0 +1,8 @@
+commit 964643e5b698c313ea491dc1559c43a7c7f74218
+Author: Anthony22290 <aba0034456@est.univalle.edu>
+Date:   Thu Oct 8 18:14:56 2026 -0400
+
+    fix: correct puzzle validation
+
+ Assets/Scripts/Puzzle/PuzzleManager.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)

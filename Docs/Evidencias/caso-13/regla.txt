@@ -1,0 +1,1 @@
+.gitignore:114:/TempLaboratorio/	TempLaboratorio/generado.txt

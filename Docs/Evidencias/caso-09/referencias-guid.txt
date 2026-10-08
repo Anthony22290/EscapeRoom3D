@@ -1,0 +1,2 @@
+Assets\Scripts\Environment\OldDoorController.cs.meta:2:guid: 062c15e7ff169ac4c9fcafb32a2058ed
+Assets\Scenes\MainScene.unity:781:  m_Script: {fileID: 11500000, guid: 062c15e7ff169ac4c9fcafb32a2058ed, type: 3}

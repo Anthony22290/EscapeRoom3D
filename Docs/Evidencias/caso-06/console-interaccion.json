@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "2000"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 8079,
+          "timestampUtc": "2026-10-08T17:33:18.4437464Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Interaction key pressed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPlayerController:Update () (at Assets/Scripts/Player/PlayerController.cs:13)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 8970,
+      "session": "69fcf7e18075470490c36711a3df779c",
+      "returned": 2000,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 2000
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-08T17:33:23.9253556Z",
+        "ageMs": 81,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 1,
+        "consoleLogs": 8933,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

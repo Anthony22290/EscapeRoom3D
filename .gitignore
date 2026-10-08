@@ -109,3 +109,9 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Archivo generado de la simulación del caso 13
+/TempLaboratorio/
+
+# Performance Testing writes these temporary resources when building.
+/Assets/Resources/PerformanceTestRun*.json*

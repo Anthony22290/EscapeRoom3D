@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "2000",
+      "level": "error"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 31965,
+          "timestampUtc": "2026-10-08T18:14:03.4833063Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Inicialización duplicada: el estado del juego se reinició dos veces.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nGameManager:Initialize () (at Assets/Scripts/GameManager.cs:30)\nGameManager:Start () (at Assets/Scripts/GameManager.cs:22)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 33095,
+      "session": "69fcf7e18075470490c36711a3df779c",
+      "returned": 1,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 1,
+        "warn": 0,
+        "log": 1132
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-08T18:14:18.9354314Z",
+        "ageMs": 51,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 0,
+        "consoleLogs": 3,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

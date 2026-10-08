@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var hud=GameHUD.Instance; var puzzle=UnityEngine.Object.FindAnyObjectByType<PuzzleManager>(); var chest=UnityEngine.Object.FindAnyObjectByType<ChestController>(); var door=UnityEngine.Object.FindAnyObjectByType<DoorController>(); hud.BeginGame(); chest.Interact(); var chestBlocked=!chest.IsOpen; door.Interact(); var doorBlocked=!door.IsOpen; hud.ShowPuzzle(puzzle); hud.codeInput.text=\"0000\"; hud.SubmitCode(); var wrongRejected=!puzzle.IsSolved&&!chest.Unlocked&&hud.puzzlePanel.activeSelf; hud.codeInput.text=\"1234\"; hud.SubmitCode(); chest.Interact(); var key=UnityEngine.Object.FindAnyObjectByType<KeyItem>(); var keyAppeared=key!=null; key.Interact(); door.Interact(); return new { branchTest=\"Dev after PR merge\", method=\"runtime component API integration test\", chestBlocked,doorBlocked,wrongRejected,correctAccepted=puzzle.IsSolved&&chest.Unlocked, chestOpen=chest.IsOpen,keyAppeared,keyCollected=GameManager.Instance.HasKey,doorOpen=door.IsOpen,completed=GameManager.Instance.GameCompleted,victory=hud.victoryPanel.activeSelf,initializeCount=GameManager.Instance.InitializationCount };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "branchTest": "Dev after PR merge",
+        "method": "runtime component API integration test",
+        "chestBlocked": true,
+        "doorBlocked": true,
+        "wrongRejected": true,
+        "correctAccepted": true,
+        "chestOpen": true,
+        "keyAppeared": true,
+        "keyCollected": true,
+        "doorOpen": true,
+        "completed": true,
+        "victory": true,
+        "initializeCount": 1
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
