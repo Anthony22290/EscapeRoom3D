@@ -1,0 +1,4 @@
+f29a392 fix: correct puzzle validation
+c53e49b docs: record reflog recovery
+ed4342f test: integrate recovered laboratory commit
+1c03d99 test: recovery point
