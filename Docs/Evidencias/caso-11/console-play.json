@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command console_status",
+  "data": {
+    "command": "console_status",
+    "parameters": {},
+    "result": {
+      "entries": [],
+      "cursor": 24723,
+      "session": "69fcf7e18075470490c36711a3df779c",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 2000
+      },
+      "groundTruth": null
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
