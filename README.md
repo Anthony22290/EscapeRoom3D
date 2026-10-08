@@ -54,3 +54,7 @@ El prefab Player utiliza CharacterController y una cámara hija; las referencias
 
 
 Consultar [la bitácora](Docs/Bitacora.md). Los registros de consola se guardan en `Docs/Evidencias`; las capturas solicitadas se registran por separado y no se sustituyen por registros de texto.
+
+[Lista de entrega](Docs/Entrega.md) · [Respuestas de reflexión](Docs/Reflexiones.md).
+
+Integraciones finales: [Feature_Puzzle → Dev, PR #1](https://github.com/Anthony22290/EscapeRoom3D/pull/1) y [Dev → main, PR #2](https://github.com/Anthony22290/EscapeRoom3D/pull/2). Ambas integradas; la revisión individual y su corrección están documentadas.
