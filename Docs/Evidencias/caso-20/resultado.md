@@ -14,7 +14,13 @@ Capturas 01 y 03–10 muestran las pantallas reales. El tinte rojo pertenece a l
 
 ## Integración
 
-Se registrarán aquí los PR, comentario útil, corrección y merges reales. La corrección solicitada en la revisión individual elimina DRAFT_PUZZLE_NOTES.md y PUZZLE_EXPERIMENT.txt, los dos archivos deliberadamente ajenos a la corrección aislada del caso 19. No se fabrica una aprobación de otro integrante.
+PR Feature_Puzzle → Dev: https://github.com/Anthony22290/EscapeRoom3D/pull/1. Comentario útil: https://github.com/Anthony22290/EscapeRoom3D/pull/1#issuecomment-6070461725. La corrección 311b19a elimina DRAFT_PUZZLE_NOTES.md y PUZZLE_EXPERIMENT.txt, los dos archivos deliberadamente ajenos a la corrección aislada del caso 19, y retira del índice los recursos temporales PerformanceTestRun*.json y sus .meta, añadiendo una regla específica a .gitignore. Los archivos generados se conservan localmente mientras el build los utiliza. No se fabrica una aprobación de otro integrante.
+
+## Compilación Windows
+
+El primer build falló porque una política de Control de aplicaciones de Windows bloqueó Unity.Burst.Cecil.Rocks (HRESULT 0x800711C7). Se conserva build-intento-burst-fallido.json. Se desactivó la optimización AOT de Burst solo para StandaloneWindows mediante la configuración nativa de Unity, guardada en ProjectSettings/BurstAotSettings_StandaloneWindows.json; no se cambió la protección del sistema. El juego usa MonoBehaviour y no depende de código Burst.
+
+El segundo build terminó Succeeded, cero errores, tamaño total 107501471 bytes. Única advertencia: Pipeline no se habilita en Player porque no hay RuntimePipelineConfig. El juego no necesita ese servidor. Resultado completo en build-status.json. Ejecutable local: Builds/Windows/EscapeRoom3D.exe; se debe conservar toda la carpeta del build. Los binarios están excluidos de Git. La prueba funcional documentada corresponde al Editor; no se confunde un build correcto con una prueba manual del ejecutable.
 
 ## Reflexión
 

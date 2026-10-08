@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var roots=UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects(); var missing=0; foreach(var root in roots) foreach(var tr in root.GetComponentsInChildren<UnityEngine.Transform>(true)) missing+=UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(tr.gameObject); return new { missingScripts=missing, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, forceText=UnityEditor.EditorSettings.serializationMode.ToString(), metaFiles=UnityEditor.VersionControlSettings.mode, camera=UnityEngine.GameObject.Find(\"Player/PlayerCamera\")!=null, characterController=UnityEngine.GameObject.Find(\"Player\").GetComponent<UnityEngine.CharacterController>()!=null };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "missingScripts": 0,
+        "scene": "Assets/Scenes/MainScene.unity",
+        "forceText": "ForceText",
+        "metaFiles": "Visible Meta Files",
+        "camera": true,
+        "characterController": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

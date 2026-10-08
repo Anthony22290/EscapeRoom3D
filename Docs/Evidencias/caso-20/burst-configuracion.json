@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var t=System.AppDomain.CurrentDomain.GetAssemblies().Select(a=>a.GetType(\"Unity.Burst.Editor.BurstPlatformAotSettings\")).FirstOrDefault(x=>x!=null); var flags=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic; var target=(UnityEditor.BuildTarget?)UnityEditor.BuildTarget.StandaloneWindows64; var settings=t.GetMethod(\"GetOrCreateSettings\",flags).Invoke(null,new object[]{target}); t.GetField(\"EnableBurstCompilation\",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).SetValue(settings,false); t.GetMethod(\"Save\",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(settings,new object[]{target}); return new { windowsBurstEnabled=false };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "windowsBurstEnabled": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
