@@ -69,7 +69,7 @@ public static class EscapeRoomSetup
             Object.DestroyImmediate(top.GetComponent<Collider>());
         }
         GameObject key = null;
-        foreach (var existingKey in Object.FindObjectsByType<KeyItem>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (var existingKey in Object.FindObjectsByType<KeyItem>(FindObjectsInactive.Include))
             if (existingKey.name == "Key") key = existingKey.gameObject;
         if (key == null)
         {
