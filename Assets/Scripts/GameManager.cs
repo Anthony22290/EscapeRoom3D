@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        // Caso 16: las ramas agregarán una llamada aquí.
+        Initialize();
     }
 
     private void Initialize()
