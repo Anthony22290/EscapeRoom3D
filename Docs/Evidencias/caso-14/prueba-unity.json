@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var p=UnityEngine.GameObject.Find(\"Puzzle\").GetComponent<PuzzleManager>(); bool bad=p.ValidateCode(\"0000\"); bool good=p.ValidateCode(\"1234\"); UnityEditor.EditorApplication.isPaused=true; return new { bad, good, p.IsSolved, p.Hint, playing=UnityEditor.EditorApplication.isPlaying };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "bad": false,
+        "good": true,
+        "IsSolved": true,
+        "Hint": "Busca un código de cuatro dígitos.",
+        "playing": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
