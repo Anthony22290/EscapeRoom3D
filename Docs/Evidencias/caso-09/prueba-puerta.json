@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var d=UnityEngine.GameObject.Find(\"Door\"); var c=d.GetComponent<OldDoorController>(); var before=d.transform.localEulerAngles.y; c.OpenDoor(); var first=d.transform.localEulerAngles.y; c.OpenDoor(); UnityEditor.Selection.activeGameObject=d; return new {before,first,second=d.transform.localEulerAngles.y,c.IsOpen,missing=UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(d)};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "before": 0,
+        "first": 90,
+        "second": 90,
+        "IsOpen": true,
+        "missing": 0
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
