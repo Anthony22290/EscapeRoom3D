@@ -1,0 +1,5 @@
+c5afaa3 chore: fix ignored files
+3353079 test: track generated laboratory file
+c2986e3 fix: remove accidental test file
+0410078 feat: update player and docs
+f6e993d chore: merge default screen dimensions
