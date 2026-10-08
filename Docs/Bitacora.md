@@ -17,7 +17,7 @@ Fecha de inicio: 2026-10-08. Modalidad: simulación individual autorizada por el
 | Caso | Actividad | Estado | Evidencia |
 | --- | --- | --- | --- |
 | 01 | Repositorio y primer commit | En curso; base existente revisada | Registros en caso-01; capturas y prueba Unity pendientes |
-| 02 | Dev y ramas Feature | Pendiente | Ramas remotas existentes detectadas |
+| 02 | Dev y ramas Feature | En curso; ramas locales preparadas | Ramas remotas existentes detectadas; publicación y capturas pendientes |
 | 03 | Commit en rama equivocada | Pendiente | — |
 | 04 | Stash | Pendiente | — |
 | 05 | Push rechazado | Pendiente | — |
@@ -55,3 +55,12 @@ Unity está abierto y se instaló Pipeline 0.8.0-exp.1, pero el Editor todavía 
 ## Reflexión del caso 01
 
 Library contiene archivos que Unity regenera y no debe compartirse. Un archivo ignorado nuevo no entra al índice; agregar una regla no deja de seguir automáticamente uno ya versionado. Un commit registra una instantánea, sus padres, autor y mensaje. El remoto permite compartir y recuperar los commits publicados.
+
+## Avance registrado
+
+- Commit de preparación: `23f6f06`, `chore: initial Unity project`. Es un commit adicional; no sustituye el commit original.
+- `Dev` se actualizó por fast-forward desde la preparación de `main`.
+- Se prepararon localmente `Feature_PlayerMovement`, `Feature_Interaction`, `Feature_Animation` y `Feature_Puzzle` desde ese estado de `Dev`.
+- El push inició pero abrió Git Credential Manager, ventana `Connect to GitHub`; espera autenticación del usuario. No se confirma publicación hasta verificar el remoto.
+- La simulación de Feature nacida del punto equivocado todavía no se ejecutó. Como main y Dev comparten actualmente el mismo commit, no habría divergencia observable.
+- Casos 03–20 todavía no ejecutados. Se espera la conexión a Unity y la disponibilidad de capturas para conservar el orden y la evidencia del procedimiento.
