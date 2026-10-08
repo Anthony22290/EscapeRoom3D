@@ -12,7 +12,7 @@ Repositorio: https://github.com/Anthony22290/EscapeRoom3D. Unity 6000.5.6f1. Esc
 | 02 | Ramas publicadas; base incorrecta simulada y corregida | caso-02; captura auténtica de GitHub añadida como verificación final, no histórica |
 | 03 | Commit en Dev preservado en Feature_PlayerMovement y retirado de Dev antes de publicar | caso-03; movimiento probado y capturas reales. Commit e5b5658 |
 | 04 | Checkout rechazado; WIP interaction guardado y recuperado | caso-04; cinco capturas. Código idéntico con LF convertido a CRLF. Stash conservado |
-| 05 | Push rechazado por divergencia, Pull merge y Push exitosos | caso-05; dos capturas VS Code. Captura GitHub pendiente |
+| 05 | Push rechazado por divergencia, Pull merge y Push exitosos | caso-05; dos capturas VS Code y captura posterior del merge real en GitHub |
 | 06 | Conflicto de PlayerController resuelto; movimiento y E probados | caso-06; Merge Editor, Result, Game View, posición y Console |
 | 07 | Conflicto real de Prefab; velocidad, Rigidbody y Animator conservados | caso-07; comparación, Inspector y movimiento en Play Mode. Animator sin controller todavía |
 | 08 | Conflicto real de escena; Chest y Door únicos, sin Missing Scripts | caso-08; Merge Editor, Hierarchy y Play Mode |
