@@ -1,0 +1,11 @@
+## main...origin/main
+ M .gitignore
+ M Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/EditorBuildSettings.asset
+ M ProjectSettings/ProjectAuditorSettings.asset
+ M ProjectSettings/ProjectSettings.asset
+ M ProjectSettings/ShaderGraphSettings.asset
+ M README.md
+?? Docs/
