@@ -41,7 +41,7 @@ Fecha de inicio: 2026-10-08. Modalidad: simulación individual autorizada por el
 
 La herramienta Computer Use falla al iniciar con `setup refresh had errors`. No se obtuvieron capturas de VS Code ni se ejecutaron operaciones desde Source Control. Las operaciones registradas por ahora se realizan con Git CLI y son una desviación del procedimiento de la guía.
 
-Unity está abierto y se instaló Pipeline 0.8.0-exp.1, pero el Editor todavía no expone el servidor. La prueba de la escena y los cambios en objetos quedan pendientes de conexión. No se declara ningún caso completamente aprobado hasta obtener sus evidencias y verificaciones requeridas.
+Unity ya expone Pipeline 0.8.0-exp.1. MainScene abrió y entró en Play Mode sin errores de compilación ni errores de consola; ver Unity-PlayMode.json. Se obtuvo MainScene.png mediante captura nativa de Scene View (no contiene Hierarchy ni Inspector). No se declara ningún caso completamente aprobado hasta obtener sus evidencias y verificaciones requeridas.
 
 ## Capturas pendientes del caso 01
 
@@ -64,3 +64,7 @@ Library contiene archivos que Unity regenera y no debe compartirse. Un archivo i
 - El push inició pero abrió Git Credential Manager, ventana `Connect to GitHub`; espera autenticación del usuario. No se confirma publicación hasta verificar el remoto.
 - La simulación de Feature nacida del punto equivocado todavía no se ejecutó. Como main y Dev comparten actualmente el mismo commit, no habría divergencia observable.
 - Casos 03–20 todavía no ejecutados. Se espera la conexión a Unity y la disponibilidad de capturas para conservar el orden y la evidencia del procedimiento.
+
+## Conexiones verificadas
+
+El push de main terminó correctamente después de la autenticación del usuario. Las carpetas se migraron desde Unity a las rutas de los casos, conservando los GUID. Las capturas de Source Control y Merge Editor siguen pendientes por el fallo de Computer Use.
