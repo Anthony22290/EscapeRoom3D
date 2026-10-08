@@ -1,0 +1,122 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "2000"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 23251,
+          "timestampUtc": "2026-10-08T17:47:52.7151935Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Interaction key pressed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPlayerController:Update () (at Assets/Scripts/Player/PlayerController.cs:13)\n",
+          "seeded": false
+        },
+        {
+          "seq": 23960,
+          "timestampUtc": "2026-10-08T17:47:58.9478197Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Interaction key pressed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPlayerController:Update () (at Assets/Scripts/Player/PlayerController.cs:13)\n",
+          "seeded": false
+        },
+        {
+          "seq": 23991,
+          "timestampUtc": "2026-10-08T17:47:59.1844085Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Interaction key pressed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPlayerController:Update () (at Assets/Scripts/Player/PlayerController.cs:13)\n",
+          "seeded": false
+        },
+        {
+          "seq": 24015,
+          "timestampUtc": "2026-10-08T17:47:59.3475856Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Interaction key pressed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPlayerController:Update () (at Assets/Scripts/Player/PlayerController.cs:13)\n",
+          "seeded": false
+        },
+        {
+          "seq": 24719,
+          "timestampUtc": "2026-10-08T17:48:04.8342177Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "El cofre está cerrado.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nChestController:Interact () (at Assets/Scripts/Environment/ChestController.cs:18)\nPipelineEvaluation.PipelineEval_5bbeb53e:Execute ()\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Compilation.EvalCodeCompiler:ExecuteCompiledAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:190)\nUnity.Pipeline.Compilation.EvalCodeCompiler:CompileAndExecuteOnMainThread (string,int,System.Diagnostics.Stopwatch) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:54)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateSource (string,int,string) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:112)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateCode (string,int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:24)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.BasePipelineServer:ExecuteCommandDirect (Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2820)\nUnity.Pipeline.BasePipelineServer/<>c__DisplayClass138_0:<ExecuteCommand>b__1 () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2694)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:284)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:229)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:195)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:210)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 24720,
+          "timestampUtc": "2026-10-08T17:48:04.8363842Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Código incorrecto.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPuzzleManager:ValidateCode (string) (at Assets/Scripts/Puzzle/PuzzleManager.cs:20)\nPipelineEvaluation.PipelineEval_5bbeb53e:Execute ()\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Compilation.EvalCodeCompiler:ExecuteCompiledAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:190)\nUnity.Pipeline.Compilation.EvalCodeCompiler:CompileAndExecuteOnMainThread (string,int,System.Diagnostics.Stopwatch) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:54)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateSource (string,int,string) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:112)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateCode (string,int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:24)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.BasePipelineServer:ExecuteCommandDirect (Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2820)\nUnity.Pipeline.BasePipelineServer/<>c__DisplayClass138_0:<ExecuteCommand>b__1 () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2694)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:284)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:229)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:195)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:210)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 24721,
+          "timestampUtc": "2026-10-08T17:48:04.8374551Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Código correcto.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nPuzzleManager:ValidateCode (string) (at Assets/Scripts/Puzzle/PuzzleManager.cs:15)\nPipelineEvaluation.PipelineEval_5bbeb53e:Execute ()\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Compilation.EvalCodeCompiler:ExecuteCompiledAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:190)\nUnity.Pipeline.Compilation.EvalCodeCompiler:CompileAndExecuteOnMainThread (string,int,System.Diagnostics.Stopwatch) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:54)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateSource (string,int,string) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:112)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateCode (string,int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:24)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.BasePipelineServer:ExecuteCommandDirect (Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2820)\nUnity.Pipeline.BasePipelineServer/<>c__DisplayClass138_0:<ExecuteCommand>b__1 () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2694)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:284)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:229)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:195)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:210)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 24722,
+          "timestampUtc": "2026-10-08T17:48:04.8374551Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Cofre desbloqueado.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nChestController:Unlock () (at Assets/Scripts/Environment/ChestController.cs:11)\nPuzzleManager:ValidateCode (string) (at Assets/Scripts/Puzzle/PuzzleManager.cs:16)\nPipelineEvaluation.PipelineEval_5bbeb53e:Execute ()\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Compilation.EvalCodeCompiler:ExecuteCompiledAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:190)\nUnity.Pipeline.Compilation.EvalCodeCompiler:CompileAndExecuteOnMainThread (string,int,System.Diagnostics.Stopwatch) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:54)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateSource (string,int,string) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:112)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateCode (string,int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:24)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.BasePipelineServer:ExecuteCommandDirect (Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2820)\nUnity.Pipeline.BasePipelineServer/<>c__DisplayClass138_0:<ExecuteCommand>b__1 () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2694)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:284)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:229)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:195)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:210)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 24723,
+          "timestampUtc": "2026-10-08T17:48:04.8384694Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Cofre abierto.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nChestController:Interact () (at Assets/Scripts/Environment/ChestController.cs:23)\nPipelineEvaluation.PipelineEval_5bbeb53e:Execute ()\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Compilation.EvalCodeCompiler:ExecuteCompiledAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:190)\nUnity.Pipeline.Compilation.EvalCodeCompiler:CompileAndExecuteOnMainThread (string,int,System.Diagnostics.Stopwatch) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Compilation/EvalCodeCompiler.cs:54)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateSource (string,int,string) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:112)\nUnity.Pipeline.Runtime.Commands.CodeEvalCommand:EvaluateCode (string,int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Commands/CodeEvalCommand.cs:24)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.BasePipelineServer:ExecuteCommandDirect (Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2820)\nUnity.Pipeline.BasePipelineServer/<>c__DisplayClass138_0:<ExecuteCommand>b__1 () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/BasePipelineServer.cs:2694)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:284)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:229)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:195)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@62c08c808737/Runtime/Common/Dispatcher.cs:210)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 24723,
+      "session": "69fcf7e18075470490c36711a3df779c",
+      "returned": 2000,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 2000
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-08T17:48:07.8135329Z",
+        "ageMs": 37,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 4028,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
