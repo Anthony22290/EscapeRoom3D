@@ -44,7 +44,13 @@ Flujo de integración: Feature → Dev → main. La entrega final requiere Pull 
 
 ## Controles actuales
 
-WASD o flechas mueven al jugador. E activa los mensajes de interacción del laboratorio. La velocidad del jugador se configura en el Inspector y su campo admite valores no negativos. El keypad y la interacción completa con objetos siguen pendientes.
+WASD o flechas: movimiento con colisiones. Ratón: mirar. E: interactuar con el objeto bajo la mira. Esc: pausa o cerrar el terminal. Pulsa «Comenzar / Continuar» para capturar el cursor.
+
+Busca la pista en la pared, introduce el código en el terminal, abre el cofre, recoge la llave dorada con E y abre la salida. El cofre y la puerta tienen animaciones. «Volver a jugar» reinicia todos los estados. Código de comprobación: `1234`.
+
+Abre `Assets/Scenes/MainScene.unity` y pulsa Play en Unity **6000.5.6f1**. La escena está incluida en Build Settings. La compilación local de Windows, cuando se genera, está en `Builds/Windows/EscapeRoom3D.exe`; la carpeta completa del build es necesaria y se excluye de Git.
+
+El prefab Player utiliza CharacterController y una cámara hija; las referencias de interacción y UI están guardadas. No se debe ejecutar de nuevo «Build UI» sobre la interfaz existente. `Assets/Editor/EscapeRoomSetup.cs` conserva el procedimiento de construcción nativo del Editor.
 
 
 Consultar [la bitácora](Docs/Bitacora.md). Los registros de consola se guardan en `Docs/Evidencias`; las capturas solicitadas se registran por separado y no se sustituyen por registros de texto.
