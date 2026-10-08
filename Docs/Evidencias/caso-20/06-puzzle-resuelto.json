@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var solved=UnityEngine.Object.FindAnyObjectByType<PuzzleManager>().IsSolved; var p=UnityEngine.Object.FindAnyObjectByType<PlayerController>(); var cc=p.GetComponent<UnityEngine.CharacterController>(); cc.enabled=false; p.transform.SetPositionAndRotation(new UnityEngine.Vector3(-3f,1.05f,1.5f),UnityEngine.Quaternion.identity); cc.enabled=true; typeof(PlayerController).GetField(\"pitch\",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).SetValue(p,40f); return new { solved, unlocked=UnityEngine.Object.FindAnyObjectByType<ChestController>().Unlocked, modal=GameHUD.IsModalOpen };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "solved": true,
+        "unlocked": true,
+        "modal": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

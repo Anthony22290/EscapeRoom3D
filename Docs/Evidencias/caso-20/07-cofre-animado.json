@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var chest=UnityEngine.Object.FindAnyObjectByType<ChestController>(); var p=UnityEngine.Object.FindAnyObjectByType<PlayerController>(); typeof(PlayerController).GetField(\"pitch\",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).SetValue(p,22f); return new { chestOpen=chest.IsOpen, lid=chest.transform.Find(\"LidPivot\").localEulerAngles.ToString(), keyActive=UnityEngine.Object.FindAnyObjectByType<KeyItem>()!=null };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "chestOpen": true,
+        "lid": "(290.00, 180.00, 180.00)",
+        "keyActive": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
