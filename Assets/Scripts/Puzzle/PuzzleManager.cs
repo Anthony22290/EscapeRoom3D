@@ -10,7 +10,7 @@ public class PuzzleManager : MonoBehaviour
 
     public bool ValidateCode(string code)
     {
-        bool valid = code == correctCode;
+        bool valid = !string.IsNullOrEmpty(correctCode) && code == correctCode;
         if (valid)
         {
             IsSolved = true;
