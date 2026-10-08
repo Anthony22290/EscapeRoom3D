@@ -1,0 +1,4 @@
+* 6fd5ff1 (HEAD -> Dev, origin/Dev, Feature_Puzzle, Feature_PlayerMovement, Feature_Interaction, Feature_Animation) chore: organiza rutas del laboratorio y verifica MainScene
+* 63b0b68 docs: registra preparación de ramas y evidencias pendientes
+* 23f6f06 (origin/main, origin/HEAD, main) chore: initial Unity project
+* 1c0e142 (origin/Feature_Puzzle, origin/Feature_PlayerMovement, origin/Feature_Interaction) Proyecto Inicial
