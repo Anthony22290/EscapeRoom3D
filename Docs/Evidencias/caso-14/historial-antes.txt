@@ -1,0 +1,27 @@
+* 171dacc docs: record cases 12 and 13 evidence
+* c5afaa3 chore: fix ignored files
+* 3353079 test: track generated laboratory file
+* c2986e3 fix: remove accidental test file
+* 0410078 feat: update player and docs
+*   f6e993d chore: merge default screen dimensions
+|\  
+| * 888e645 chore: set default window height
+* |   7948ef5 chore: integrate default window width
+|\ \  
+| |/  
+|/|   
+| * a314cb0 chore: set default window width
+|/  
+*   b467fbc feat: merge puzzle validation and solved state
+|\  
+| * 848bca5 feat: add puzzle solved state
+* |   f19d95b feat: integrate puzzle validation
+|\ \  
+| |/  
+|/|   
+| * d6d5e35 feat: add puzzle code validation
+|/  
+* a0de3c9 feat: add chest interaction baseline
+* af1df94 docs: confirma validación de puerta recuperada
+*   916f5c6 fix: keep referenced door controller after conflict
+|\  
