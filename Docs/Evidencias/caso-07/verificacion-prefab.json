@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEditor.AssetDatabase.AllowAutoRefresh(); UnityEditor.AssetDatabase.ImportAsset(\"Assets/Prefabs/Player.prefab\",UnityEditor.ImportAssetOptions.ForceUpdate); var path=\"Assets/Prefabs/Player.prefab\"; var p=UnityEditor.PrefabUtility.LoadPrefabContents(path); if(p.GetComponent<UnityEngine.Animator>()==null) p.AddComponent<UnityEngine.Animator>(); UnityEditor.PrefabUtility.SaveAsPrefabAsset(p,path); var result=new {speed=p.GetComponent<PlayerController>().speed,kinematic=p.GetComponent<UnityEngine.Rigidbody>().isKinematic,components=System.Array.ConvertAll(p.GetComponents<UnityEngine.Component>(),c=>c==null?\"Missing\":c.GetType().Name)}; UnityEditor.PrefabUtility.UnloadPrefabContents(p); UnityEditor.Selection.activeObject=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(path); return result;"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "speed": 7,
+        "kinematic": true,
+        "components": [
+          "Transform",
+          "MeshFilter",
+          "CapsuleCollider",
+          "MeshRenderer",
+          "PlayerController",
+          "Rigidbody",
+          "Animator"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
