@@ -15,6 +15,8 @@ Los casos colaborativos de esta ejecución se practicarán como simulaciones ind
 
 Explorar una habitación, resolver un código, abrir un cofre, obtener una llave y abrir la puerta de salida.
 
+Caso 05, copia A (simulación individual): este repositorio evoluciona en un único proyecto Unity y conserva la historia de las integraciones.
+
 ## Unity
 
 - Versión del proyecto: **6000.5.6f1**.
