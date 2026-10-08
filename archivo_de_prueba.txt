@@ -1,0 +1,1 @@
+Archivo deliberadamente incluido por error en el caso 12. Debe retirarse mediante un commit posterior porque el commit inicial se publicará.
