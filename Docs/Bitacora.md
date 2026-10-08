@@ -18,7 +18,7 @@ Fecha de inicio: 2026-10-08. Modalidad: simulación individual autorizada por el
 | --- | --- | --- | --- |
 | 01 | Repositorio y primer commit | Operaciones Git y prueba de escena verificadas; evidencia incompleta | Registros y MainScene.png; capturas VS Code/GitHub pendientes |
 | 02 | Dev y ramas Feature | Ramas publicadas y error de base simulado/corregido; evidencia incompleta | Registros en caso-02; capturas VS Code/GitHub pendientes |
-| 03 | Commit en rama equivocada | En curso: script creado en Dev, compiló; prueba de movimiento pendiente | archivo-creado-en-Dev.txt; no se ha creado el commit equivocado |
+| 03 | Commit en rama equivocada | Movimiento probado y commit trasladado a Feature; evidencias obtenidas | Capturas Unity/VS Code y registros en caso-03 |
 | 04 | Stash | Pendiente | — |
 | 05 | Push rechazado | Pendiente | — |
 | 06 | Conflicto en script | Pendiente | — |
@@ -72,3 +72,11 @@ El push de main terminó correctamente después de la autenticación del usuario
 ## Punto de continuación
 
 Rama de trabajo: Dev. PlayerController.cs y su meta están pendientes del caso 03; no incluirlos en un commit de documentación. Esperar a que Unity termine de reiniciar y comprobar Pipeline. Probar movimiento antes del commit `feat: add player movement`, conservarlo en Feature_PlayerMovement y retirarlo de Dev sin reescribir historia compartida. Las capturas de VS Code siguen bloqueadas por el fallo del motor Computer Use.
+
+## Caso 03 verificado
+
+Se stagearon desde Source Control MainScene.unity, PlayerController.cs y su meta. El commit `e5b5658`, `feat: add player movement`, se creó en Dev desde VS Code y no se publicó allí. Se conservó actualizando Feature_PlayerMovement a ese commit; Dev volvió con reset --keep a ef0bc05. Esta corrección de referencias se ejecutó con Git CLI, una desviación registrada respecto del procedimiento de interfaz. La Feature se publicó por fast-forward sin force push.
+
+Player se movió de (0, 1, 0) a (-1.069, 1, -1.441) en Play Mode, sin errores de compilación ni consola. La escena se guardó explícitamente en modo edición. Capturas reales: VSCode-commit-en-Dev-antes.png, VSCode-historial-corregido.png y Unity-PlayMode-contexto.png. Una captura posterior al commit quedó tapada por otra ventana y se descartó; el reflog conserva la evidencia del commit y su corrección.
+
+Computer Use volvió a funcionar en esta sesión. El usuario habilitó la confianza de la carpeta en VS Code. Las limitaciones de captura anteriores son históricas; las evidencias no obtenidas entonces siguen pendientes.
