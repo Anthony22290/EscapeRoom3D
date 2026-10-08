@@ -1,0 +1,8 @@
+* e5b5658 (HEAD -> Feature_PlayerMovement, origin/Feature_PlayerMovement) feat: add player movement
+* ef0bc05 (origin/Dev, Dev) docs: actualiza avances verificados de casos 01 y 02
+* 9081200 chore: habilita entrada compatible con la guía
+* 5a67da0 docs: registra simulación de base de Feature y corrección
+* 6fd5ff1 (origin/Feature_Puzzle, origin/Feature_Interaction, origin/Feature_Animation, Feature_Puzzle, Feature_Interaction, Feature_Animation) chore: organiza rutas del laboratorio y verifica MainScene
+* 63b0b68 docs: registra preparación de ramas y evidencias pendientes
+* 23f6f06 (origin/main, origin/HEAD, main) chore: initial Unity project
+* 1c0e142 Proyecto Inicial

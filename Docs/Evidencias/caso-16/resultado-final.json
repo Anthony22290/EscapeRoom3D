@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEditor.EditorApplication.isPaused=true; var gm=GameManager.Instance; gm.ObtainKey(); return new {count=gm.InitializationCount,gm.HasKey,playing=UnityEditor.EditorApplication.isPlaying};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "count": 1,
+        "HasKey": true,
+        "playing": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

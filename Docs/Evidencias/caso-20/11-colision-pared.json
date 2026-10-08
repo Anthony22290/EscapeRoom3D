@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var p=UnityEngine.Object.FindAnyObjectByType<PlayerController>(); var cc=p.GetComponent<UnityEngine.CharacterController>(); cc.enabled=false; p.transform.position=new UnityEngine.Vector3(0,1.05f,-3.5f); cc.enabled=true; var before=p.transform.position; var flags=cc.Move(UnityEngine.Vector3.right*20f); var after=p.transform.position; cc.enabled=false; p.transform.position=before; cc.enabled=true; return new { before=before.ToString(), after=after.ToString(), flags=flags.ToString(), stoppedAtWall=after.x<6f, grounded=cc.isGrounded };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "before": "(0.00, 1.05, -3.50)",
+        "after": "(5.48, 1.05, -3.50)",
+        "flags": "Sides",
+        "stoppedAtWall": true,
+        "grounded": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

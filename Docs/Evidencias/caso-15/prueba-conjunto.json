@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEditor.EditorApplication.isPaused=true; var puzzle=UnityEngine.GameObject.Find(\"Puzzle\").GetComponent<PuzzleManager>(); bool bad=puzzle.ValidateCode(\"0000\"); bool good=puzzle.ValidateCode(\"1234\"); UnityEngine.GameObject.Find(\"Chest\").GetComponent<ChestController>().Interact(); var door=UnityEngine.GameObject.Find(\"Door\").GetComponent<OldDoorController>(); door.OpenDoor(); return new {bad,good,puzzle.IsSolved,doorAngle=door.transform.localEulerAngles.y,playing=UnityEditor.EditorApplication.isPlaying};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "bad": false,
+        "good": true,
+        "IsSolved": true,
+        "doorAngle": 90,
+        "playing": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

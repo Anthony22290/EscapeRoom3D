@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var d=UnityEngine.GameObject.Find(\"Door\").GetComponent<OldDoorController>(); float before=d.transform.localEulerAngles.y; d.OpenDoor(); UnityEditor.EditorApplication.isPaused=true; UnityEditor.Selection.activeGameObject=d.gameObject; return new {before,after=d.transform.localEulerAngles.y,d.IsOpen,playing=UnityEditor.EditorApplication.isPlaying};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "before": 0,
+        "after": 90,
+        "IsOpen": true,
+        "playing": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,19 @@
+diff --cc Assets/Scripts/Player/PlayerController.cs
+index 69ba89f,d9c77a1..0000000
+--- a/Assets/Scripts/Player/PlayerController.cs
++++ b/Assets/Scripts/Player/PlayerController.cs
+@@@ -7,7 -7,10 +7,14 @@@ public class PlayerController : MonoBeh
+      private void Update()
+      {
+          Move();
+++<<<<<<< HEAD
+ +        Debug.Log("Movement system active");
+++=======
++         if (Input.GetKeyDown(KeyCode.E))
++         {
++             Debug.Log("Interaction key pressed");
++         }
+++>>>>>>> Feature_Interaction
+      }
+  
+      private void Move()

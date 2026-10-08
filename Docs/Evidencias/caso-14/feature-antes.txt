@@ -1,0 +1,13 @@
+* 3135ff9 feat: add puzzle hint
+* d6d5e35 feat: add puzzle code validation
+* a0de3c9 feat: add chest interaction baseline
+* af1df94 docs: confirma validación de puerta recuperada
+*   916f5c6 fix: keep referenced door controller after conflict
+|\  
+| * 9c8ad2c fix: update old door controller
+* |   bc63551 refactor: integrate old door removal
+|\ \  
+| |/  
+|/|   
+| * 5f3ddad refactor: remove old door controller
+|/  

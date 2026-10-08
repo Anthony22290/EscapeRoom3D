@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var scene=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/MainScene.unity\",UnityEditor.SceneManagement.OpenSceneMode.Single); var go=UnityEngine.GameObject.Find(\"Door\"); if(go==null) go=UnityEngine.GameObject.CreatePrimitive(UnityEngine.PrimitiveType.Cube); go.name=\"Door\"; go.transform.position=new UnityEngine.Vector3(3,1.5f,4); go.transform.localScale=new UnityEngine.Vector3(1.5f,3,0.3f); UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene); UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene); UnityEditor.AssetDatabase.AllowAutoRefresh(); UnityEditor.AssetDatabase.Refresh(); var roots=scene.GetRootGameObjects(); return System.Array.ConvertAll(roots,p=>new {name=p.name,position=p.transform.position.ToString(\"F2\"),missing=UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(p)});"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": [
+        {
+          "name": "Main Camera",
+          "position": "(0.00, 7.00, -10.00)",
+          "missing": 0
+        },
+        {
+          "name": "Directional Light",
+          "position": "(0.00, 3.00, 0.00)",
+          "missing": 0
+        },
+        {
+          "name": "Global Volume",
+          "position": "(0.00, 0.00, 0.00)",
+          "missing": 0
+        },
+        {
+          "name": "Floor",
+          "position": "(0.00, -0.25, 0.00)",
+          "missing": 0
+        },
+        {
+          "name": "Player",
+          "position": "(0.00, 1.00, 0.00)",
+          "missing": 0
+        },
+        {
+          "name": "Chest",
+          "position": "(-3.00, 0.50, 3.00)",
+          "missing": 0
+        },
+        {
+          "name": "Door",
+          "position": "(3.00, 1.50, 4.00)",
+          "missing": 0
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
