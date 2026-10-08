@@ -1,0 +1,4 @@
+c2986e3 fix: remove accidental test file
+0410078 feat: update player and docs
+f6e993d chore: merge default screen dimensions
+7948ef5 chore: integrate default window width

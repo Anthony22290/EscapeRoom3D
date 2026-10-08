@@ -18,9 +18,9 @@ Repositorio: https://github.com/Anthony22290/EscapeRoom3D. Unity 6000.5.6f1. Esc
 | 08 | Conflicto real de escena; Chest y Door únicos, sin Missing Scripts | caso-08; Merge Editor, Hierarchy y Play Mode |
 | 09 | Delete/Modify; controlador necesario recuperado junto con su GUID | caso-09; conflicto, referencias y puerta de 0 a 90 grados; segunda llamada idempotente |
 | 10 | Add/Add; una validación con IsSolved y desbloqueo del cofre | caso-10; código incorrecto/correcto probado en Play Mode. Animación y keypad UI pendientes |
-| 11 | ProjectSettings | Pendiente |
-| 12 | Commit incorrecto | Pendiente |
-| 13 | Archivo ignorado ya versionado | Pendiente |
+| 11 | Conflicto real de ancho/alto integrado | caso-11; 1280 × 720 almacenados; pantalla completa sigue nativa |
+| 12 | Commit publicado con archivo accidental; corregido en otro commit | caso-12; historial conservado, capturas y compilación |
+| 13 | Archivo generado retirado del índice, conservado localmente | caso-13; regla y estado verificados, tres capturas |
 | 14 | Feature desactualizada | Pendiente |
 | 15 | Conflictos múltiples | Pendiente |
 | 16 | Accept Both produce un bug | Pendiente |
@@ -43,4 +43,5 @@ Computer Use ya permite capturas de VS Code y Unity. El navegador produjo un blo
 
 MainScene contiene Floor, Player enlazado a Player.prefab, Chest, Door y Puzzle, además de cámara, luz y volumen. El movimiento y la tecla E se probaron con teclado. Puzzle valida 1234 y desbloquea Chest. Door conserva OldDoorController mientras no exista un reemplazo funcional. Todavía faltan habitación final, UI de código, llave y animaciones; no se declara el Escape Room completo.
 
-Cada carpeta Docs/Evidencias/caso-NN contiene detalles, reflexiones y límites de su caso. Continuar desde caso 11, mantener Dev como integración y completar las capturas pendientes antes de la entrega final.
+Cada carpeta Docs/Evidencias/caso-NN contiene detalles, reflexiones y límites de su caso. Continuar desde caso 14, mantener Dev como integración y completar las capturas pendientes antes de la entrega final.
+
