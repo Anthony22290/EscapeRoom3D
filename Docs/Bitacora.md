@@ -1,82 +1,47 @@
 # Bitácora del laboratorio
 
-Fecha de inicio: 2026-10-08. Modalidad: simulación individual autorizada por el usuario. Autoría Git: la cuenta configurada en el repositorio; no se simulan identidades de compañeros.
+Actualizado: 2026-10-08. Modalidad: simulación individual autorizada. Commits con la cuenta del usuario; no se atribuyen trabajos a compañeros.
 
-## Estado inicial verificado
+Repositorio: https://github.com/Anthony22290/EscapeRoom3D. Unity 6000.5.6f1. Escena Assets/Scenes/MainScene.unity. El commit original 1c0e142, Proyecto Inicial, se conserva.
 
-- Repositorio: https://github.com/Anthony22290/EscapeRoom3D
-- Commit inicial existente: `1c0e142`, mensaje `Proyecto Inicial`. Se conserva su historia.
-- Proyecto Unity 6000.5.6f1; escena `Assets/00_Scenes/MainScene.unity`.
-- Ramas remotas existentes: main, Dev, Feature_PlayerMovement, Feature_Interaction y Feature_Puzzle, inicialmente en el mismo commit.
-- `.gitignore` ya excluía Library, Temp, Logs, obj, builds y UserSettings; no estaban versionados. No se provocó ese problema retrospectivamente.
-- Force Text y Visible Meta Files ya estaban configurados.
-- Cambios locales de Unity existentes conservados; se identificó la actualización de la ruta de la escena en EditorBuildSettings y una propiedad nueva de ShaderGraph.
+## Estado por caso
 
-## Casos
+| Caso | Problema y resultado | Evidencia y límites |
+| --- | --- | --- |
+| 01 | Configuración inicial y escena verificadas | caso-01; faltan capturas históricas previas y GitHub. .gitignore ya era adecuado al iniciar |
+| 02 | Ramas publicadas; base incorrecta simulada y corregida | caso-02; capturas de ramas/GitHub pendientes |
+| 03 | Commit en Dev preservado en Feature_PlayerMovement y retirado de Dev antes de publicar | caso-03; movimiento probado y capturas reales. Commit e5b5658 |
+| 04 | Checkout rechazado; WIP interaction guardado y recuperado | caso-04; cinco capturas. Código idéntico con LF convertido a CRLF. Stash conservado |
+| 05 | Push rechazado por divergencia, Pull merge y Push exitosos | caso-05; dos capturas VS Code. Captura GitHub pendiente |
+| 06 | Conflicto de PlayerController resuelto; movimiento y E probados | caso-06; Merge Editor, Result, Game View, posición y Console |
+| 07 | Conflicto real de Prefab; velocidad, Rigidbody y Animator conservados | caso-07; comparación, Inspector y movimiento en Play Mode. Animator sin controller todavía |
+| 08 | Conflicto real de escena; Chest y Door únicos, sin Missing Scripts | caso-08; Merge Editor, Hierarchy y Play Mode |
+| 09 | Delete/Modify; controlador necesario recuperado junto con su GUID | caso-09; conflicto, referencias y puerta de 0 a 90 grados; segunda llamada idempotente |
+| 10 | Add/Add; una validación con IsSolved y desbloqueo del cofre | caso-10; código incorrecto/correcto probado en Play Mode. Animación y keypad UI pendientes |
+| 11 | Conflicto real de ancho/alto integrado | caso-11; 1280 × 720 almacenados; pantalla completa sigue nativa |
+| 12 | Commit publicado con archivo accidental; corregido en otro commit | caso-12; historial conservado, capturas y compilación |
+| 13 | Archivo generado retirado del índice, conservado localmente | caso-13; regla y estado verificados, tres capturas |
+| 14 | Feature desactualizada | Pendiente |
+| 15 | Conflictos múltiples | Pendiente |
+| 16 | Accept Both produce un bug | Pendiente |
+| 17 | Revert | Pendiente |
+| 18 | Recuperación con reflog | Pendiente |
+| 19 | Cherry-pick | Pendiente |
+| 20 | Pull Requests y entrega | Pendiente; revisión real por otra cuenta no se puede simular como aprobación auténtica |
 
-| Caso | Actividad | Estado | Evidencia |
-| --- | --- | --- | --- |
-| 01 | Repositorio y primer commit | Operaciones Git y prueba de escena verificadas; evidencia incompleta | Registros y MainScene.png; capturas VS Code/GitHub pendientes |
-| 02 | Dev y ramas Feature | Ramas publicadas y error de base simulado/corregido; evidencia incompleta | Registros en caso-02; capturas VS Code/GitHub pendientes |
-| 03 | Commit en rama equivocada | Movimiento probado y commit trasladado a Feature; evidencias obtenidas | Capturas Unity/VS Code y registros en caso-03 |
-| 04 | Stash | Pendiente | — |
-| 05 | Push rechazado | Pendiente | — |
-| 06 | Conflicto en script | Pendiente | — |
-| 07 | Conflicto en prefab | Pendiente | — |
-| 08 | Conflicto en escena | Pendiente | — |
-| 09 | Delete/Modify | Pendiente | — |
-| 10 | Add/Add | Pendiente | — |
-| 11 | ProjectSettings | Pendiente | — |
-| 12 | Commit incorrecto | Pendiente | — |
-| 13 | Archivo ignorado ya versionado | Pendiente | — |
-| 14 | Feature desactualizada | Pendiente | — |
-| 15 | Conflictos múltiples | Pendiente | — |
-| 16 | Accept Both produce un bug | Pendiente | — |
-| 17 | Revert | Pendiente | — |
-| 18 | Recuperación con reflog | Pendiente | — |
-| 19 | Cherry-pick | Pendiente | — |
-| 20 | Pull Requests y entrega | Pendiente | — |
+## Método y desviaciones
 
-## Limitaciones actuales
+Se usan ramas exactas main, Dev, Feature_PlayerMovement, Feature_Interaction, Feature_Animation y Feature_Puzzle. Git CLI prepara ramas, commits y merges; las acciones reales de Source Control y Merge Editor se describen en cada resultado. Esto no cumple íntegramente la regla de realizar Git principalmente desde VS Code y debe revisarse con el docente. Las capturas son auténticas; los registros de texto no sustituyen capturas faltantes.
 
-La herramienta Computer Use falla al iniciar con `setup refresh had errors`. No se obtuvieron capturas de VS Code ni se ejecutaron operaciones desde Source Control. Las operaciones registradas por ahora se realizan con Git CLI y son una desviación del procedimiento de la guía.
+Los casos colaborativos usan una sola identidad. En caso 05 se usaron dos árboles de trabajo del mismo repositorio. No se borró .git ni se volvió a clonar para ocultar errores. No se reescribió historia compartida.
 
-Unity ya expone Pipeline 0.8.0-exp.1. MainScene abrió y entró en Play Mode sin errores de compilación ni errores de consola; ver Unity-PlayMode.json. Se obtuvo MainScene.png mediante captura nativa de Scene View (no contiene Hierarchy ni Inspector). No se declara ningún caso completamente aprobado hasta obtener sus evidencias y verificaciones requeridas.
+Escenas y Prefabs se crean y modifican desde el Editor mediante Pipeline/Unity CLI. Durante conflictos serializados se suspende AutoRefresh y después se restaura. Las versiones válidas se recuperan con Git y se reconstruye la intención faltante desde Unity, conservando referencias; no se edita YAML manualmente.
 
-## Capturas pendientes del caso 01
+Computer Use ya permite capturas de VS Code y Unity. El navegador produjo un bloqueo al no poder verificar la URL; las capturas de GitHub siguen pendientes y no se sustituyen con imágenes fabricadas.
 
-- Source Control antes del ajuste adicional de `.gitignore` (no se obtuvo).
-- Contenido de `.gitignore`.
-- Commit en VS Code.
-- Repositorio en GitHub.
-- Working Tree limpio.
-- Captura de Console/Editor: la prueba de MainScene en Play Mode ya se ejecutó; Unity-PlayMode.json registra el resultado.
+## Juego y continuación
 
-## Reflexión del caso 01
+MainScene contiene Floor, Player enlazado a Player.prefab, Chest, Door y Puzzle, además de cámara, luz y volumen. El movimiento y la tecla E se probaron con teclado. Puzzle valida 1234 y desbloquea Chest. Door conserva OldDoorController mientras no exista un reemplazo funcional. Todavía faltan habitación final, UI de código, llave y animaciones; no se declara el Escape Room completo.
 
-Library contiene archivos que Unity regenera y no debe compartirse. Un archivo ignorado nuevo no entra al índice; agregar una regla no deja de seguir automáticamente uno ya versionado. Un commit registra una instantánea, sus padres, autor y mensaje. El remoto permite compartir y recuperar los commits publicados.
+Cada carpeta Docs/Evidencias/caso-NN contiene detalles, reflexiones y límites de su caso. Continuar desde caso 14, mantener Dev como integración y completar las capturas pendientes antes de la entrega final.
 
-## Avance registrado
-
-- Commit de preparación: `23f6f06`, `chore: initial Unity project`. Es un commit adicional; no sustituye el commit original.
-- `Dev` se actualizó por fast-forward desde la preparación de `main`.
-- Se prepararon localmente `Feature_PlayerMovement`, `Feature_Interaction`, `Feature_Animation` y `Feature_Puzzle` desde ese estado de `Dev`.
-- El primer push esperó autenticación. El usuario completó Git Credential Manager y se verificó la publicación con `git ls-remote --heads origin`.
-- Se creó temporalmente `codex/lab-feature-base-error` desde main, cuando Dev ya había avanzado. Se registraron los commits faltantes, se eliminó solo esa referencia temporal sin trabajo propio y se prepararon las cuatro Features desde Dev. Se publicaron correctamente; ver caso-02.
-- Caso 03 iniciado: PlayerController.cs creado exactamente con la lógica de la guía y recompilado sin errores. Se detectó entrada nueva exclusiva y se configuró Both desde Unity para permitir Input.GetAxis. Se guardó y reinició el Editor. La prueba de movimiento y la corrección de la rama aún no se ejecutaron. Casos 04–20 pendientes.
-
-## Conexiones verificadas
-
-El push de main terminó correctamente después de la autenticación del usuario. Las carpetas se migraron desde Unity a las rutas de los casos, conservando los GUID. Las capturas de Source Control y Merge Editor siguen pendientes por el fallo de Computer Use.
-
-## Punto de continuación
-
-Rama de trabajo: Dev. PlayerController.cs y su meta están pendientes del caso 03; no incluirlos en un commit de documentación. Esperar a que Unity termine de reiniciar y comprobar Pipeline. Probar movimiento antes del commit `feat: add player movement`, conservarlo en Feature_PlayerMovement y retirarlo de Dev sin reescribir historia compartida. Las capturas de VS Code siguen bloqueadas por el fallo del motor Computer Use.
-
-## Caso 03 verificado
-
-Se stagearon desde Source Control MainScene.unity, PlayerController.cs y su meta. El commit `e5b5658`, `feat: add player movement`, se creó en Dev desde VS Code y no se publicó allí. Se conservó actualizando Feature_PlayerMovement a ese commit; Dev volvió con reset --keep a ef0bc05. Esta corrección de referencias se ejecutó con Git CLI, una desviación registrada respecto del procedimiento de interfaz. La Feature se publicó por fast-forward sin force push.
-
-Player se movió de (0, 1, 0) a (-1.069, 1, -1.441) en Play Mode, sin errores de compilación ni consola. La escena se guardó explícitamente en modo edición. Capturas reales: VSCode-commit-en-Dev-antes.png, VSCode-historial-corregido.png y Unity-PlayMode-contexto.png. Una captura posterior al commit quedó tapada por otra ventana y se descartó; el reflog conserva la evidencia del commit y su corrección.
-
-Computer Use volvió a funcionar en esta sesión. El usuario habilitó la confianza de la carpeta en VS Code. Las limitaciones de captura anteriores son históricas; las evidencias no obtenidas entonces siguen pendientes.

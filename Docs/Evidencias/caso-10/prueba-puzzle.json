@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var p=UnityEngine.Object.FindFirstObjectByType<PuzzleManager>(); var c=UnityEngine.Object.FindFirstObjectByType<ChestController>(); var so=new UnityEditor.SerializedObject(c); c.Interact(); var wrong=p.ValidateCode(\"0000\"); so.Update(); var lockedAfterWrong=!so.FindProperty(\"unlocked\").boolValue; var correct=p.ValidateCode(\"1234\"); c.Interact(); so.Update(); UnityEditor.Selection.activeGameObject=c.gameObject; UnityEditor.EditorApplication.isPaused=true; return new {wrong,lockedAfterWrong,correct,p.IsSolved,unlocked=so.FindProperty(\"unlocked\").boolValue};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "wrong": false,
+        "lockedAfterWrong": true,
+        "correct": true,
+        "IsSolved": true,
+        "unlocked": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

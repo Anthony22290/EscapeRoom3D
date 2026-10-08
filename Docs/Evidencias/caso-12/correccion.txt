@@ -1,0 +1,8 @@
+commit c2986e360d85770f02f36ec27572e265c3051247
+Author: Anthony22290 <aba0034456@est.univalle.edu>
+Date:   Thu Oct 8 13:58:58 2026 -0400
+
+    fix: remove accidental test file
+
+ archivo_de_prueba.txt | 1 -
+ 1 file changed, 1 deletion(-)
