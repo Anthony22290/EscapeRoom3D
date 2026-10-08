@@ -1,0 +1,16 @@
+diff --cc Assets/Scripts/GameManager.cs
+index d31c3e9,5b8ba55..0000000
+--- a/Assets/Scripts/GameManager.cs
++++ b/Assets/Scripts/GameManager.cs
+@@@ -18,7 -18,7 +18,11 @@@ public class GameManager : MonoBehaviou
+  
+      private void Start()
+      {
+++<<<<<<< HEAD
+ +        Initialize();
+++=======
++         this.Initialize();
+++>>>>>>> Feature_Interaction
+      }
+  
+      private void Initialize()
