@@ -18,12 +18,12 @@ Explorar una habitación, resolver un código, abrir un cofre, obtener una llave
 ## Unity
 
 - Versión del proyecto: **6000.5.6f1**.
-- Escena existente: `Assets/00_Scenes/MainScene.unity`.
-- Estructura existente: `00_Scenes`, `01_Scripts`, `02_Prefabs`, `03_Materials`, `04_Models`, `05_Textures` y `06_UI`, dentro de `Assets`.
+- Escena existente: `Assets/Scenes/MainScene.unity`.
+- Estructura existente: `Scenes`, `Scripts`, `Prefabs`, `Materials`, `04_Models`, `05_Textures` y `UI`, dentro de `Assets`.
 - Serialización: Force Text. Control de versiones: Visible Meta Files.
 - Paquete `com.unity.pipeline`: conexión del Editor con Unity CLI.
 
-La guía presenta una estructura numerada y también rutas sin números en los procedimientos. Antes de crear los scripts de los casos se debe acordar una estructura consistente y migrar los assets con Unity, conservando sus GUID.
+La guía presenta una estructura numerada y también rutas sin números en los procedimientos. Se utilizan las rutas sin números de los casos. Las carpetas existentes se migraron mediante AssetDatabase de Unity, conservando sus GUID.
 
 ## Ramas del laboratorio
 
