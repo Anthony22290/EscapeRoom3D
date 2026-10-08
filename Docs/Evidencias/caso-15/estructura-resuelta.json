@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var p=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(\"Assets/Prefabs/Player.prefab\"); int missing=0; foreach(var root in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects()) foreach(var t in root.GetComponentsInChildren<UnityEngine.Transform>(true)) missing+=UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject); return new { speed=p.GetComponent<PlayerController>().speed, interaction=p.GetComponent<PlayerInteraction>()!=null, rigidbody=p.GetComponent<UnityEngine.Rigidbody>()!=null, animator=p.GetComponent<UnityEngine.Animator>()!=null, missing, clue=UnityEngine.GameObject.Find(\"ClueMarker\")!=null, exit=UnityEngine.GameObject.Find(\"ExitMarker\")!=null, chest=UnityEngine.GameObject.Find(\"Chest\")!=null, door=UnityEngine.GameObject.Find(\"Door\")!=null };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "speed": 6,
+        "interaction": true,
+        "rigidbody": true,
+        "animator": true,
+        "missing": 0,
+        "clue": true,
+        "exit": true,
+        "chest": true,
+        "door": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\antho\\Documents\\GitHub\\EscapeRoom3D"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
