@@ -42,4 +42,9 @@ Flujo de integración: Feature → Dev → main. La entrega final requiere Pull 
 
 ## Evidencias
 
+## Controles actuales
+
+WASD o flechas mueven al jugador. E activa los mensajes de interacción del laboratorio. La velocidad del jugador se configura en el Inspector y su campo admite valores no negativos. El keypad y la interacción completa con objetos siguen pendientes.
+
+
 Consultar [la bitácora](Docs/Bitacora.md). Los registros de consola se guardan en `Docs/Evidencias`; las capturas solicitadas se registran por separado y no se sustituyen por registros de texto.
