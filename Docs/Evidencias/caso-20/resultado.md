@@ -18,6 +18,8 @@ PR Feature_Puzzle → Dev: https://github.com/Anthony22290/EscapeRoom3D/pull/1. 
 
 ## Compilación Windows
 
+El PR #1 se integró en Dev mediante merge 656c763, conservando todos los commits. Se actualizó Dev local con fast-forward, se reabrió MainScene desde disco y se repitió el flujo completo por API de componentes en Play Mode: bloqueos previos, código incorrecto/correcto, cofre, llave y salida; todos los resultados son true, contador de inicialización 1 y Console sin errores ni advertencias. Esta prueba de integración es distinta de los controles reales anteriores. Registros qa-dev.json y console-dev.json, captura 14-victoria-dev.png.
+
 El primer build falló porque una política de Control de aplicaciones de Windows bloqueó Unity.Burst.Cecil.Rocks (HRESULT 0x800711C7). Se conserva build-intento-burst-fallido.json. Se desactivó la optimización AOT de Burst solo para StandaloneWindows mediante la configuración nativa de Unity, guardada en ProjectSettings/BurstAotSettings_StandaloneWindows.json; no se cambió la protección del sistema. El juego usa MonoBehaviour y no depende de código Burst.
 
 El segundo build terminó Succeeded, cero errores, tamaño total 107501471 bytes. Única advertencia: Pipeline no se habilita en Player porque no hay RuntimePipelineConfig. El juego no necesita ese servidor. Resultado completo en build-status.json. Ejecutable local: Builds/Windows/EscapeRoom3D.exe; se debe conservar toda la carpeta del build. Los binarios están excluidos de Git. La prueba funcional documentada corresponde al Editor; no se confunde un build correcto con una prueba manual del ejecutable.
