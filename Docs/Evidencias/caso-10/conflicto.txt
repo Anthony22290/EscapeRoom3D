@@ -1,0 +1,35 @@
+diff --cc Assets/Scripts/Puzzle/PuzzleManager.cs
+index 8fa9d77,8df1af5..0000000
+--- a/Assets/Scripts/Puzzle/PuzzleManager.cs
++++ b/Assets/Scripts/Puzzle/PuzzleManager.cs
+@@@ -3,20 -3,12 +3,30 @@@ using UnityEngine
+  public class PuzzleManager : MonoBehaviour
+  {
+      [SerializeField] private string correctCode = "1234";
+++<<<<<<< HEAD
+ +    [SerializeField] private ChestController chest;
+ +
+ +    public bool ValidateCode(string code)
+ +    {
+ +        bool valid = code == correctCode;
+ +        if (valid)
+ +        {
+ +            Debug.Log("Código correcto.");
+ +            if (chest != null) chest.Unlock();
+ +        }
+ +        else
+ +        {
+ +            Debug.Log("Código incorrecto.");
+ +        }
+ +        return valid;
+++=======
++     public bool IsSolved { get; private set; }
++ 
++     public bool ValidateCode(string code)
++     {
++         IsSolved = code == correctCode;
++         Debug.Log(IsSolved ? "Puzzle solved" : "Puzzle remains locked");
++         return IsSolved;
+++>>>>>>> Feature_Interaction
+      }
+  }
