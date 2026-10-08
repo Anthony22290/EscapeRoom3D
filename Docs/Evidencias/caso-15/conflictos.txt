@@ -1,0 +1,111 @@
+diff --cc Assets/Prefabs/Player.prefab
+index 8a7bafa,a1818bb..0000000
+--- a/Assets/Prefabs/Player.prefab
++++ b/Assets/Prefabs/Player.prefab
+@@@ -129,7 -130,7 +130,11 @@@ MonoBehaviour
+    m_Script: {fileID: 11500000, guid: 0ebf35f359f00ee419cf0ab6346437d7, type: 3}
+    m_Name: 
+    m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+++<<<<<<< HEAD
+ +  speed: 8
+++=======
++   speed: 6
+++>>>>>>> Feature_Interaction
+  --- !u!54 &8040938505757037720
+  Rigidbody:
+    m_ObjectHideFlags: 0
+diff --cc Assets/Scenes/MainScene.unity
+index 1d8936c,d57ef9b..0000000
+--- a/Assets/Scenes/MainScene.unity
++++ b/Assets/Scenes/MainScene.unity
+@@@ -246,7 -246,7 +246,11 @@@ MonoBehaviour
+    m_EditorClassIdentifier: Assembly-CSharp::ChestController
+    unlocked: 0
+    animator: {fileID: 0}
+++<<<<<<< HEAD
+ +--- !u!1 &254651744
+++=======
++ --- !u!1 &263013320
+++>>>>>>> Feature_Interaction
+  GameObject:
+    m_ObjectHideFlags: 0
+    m_CorrespondingSourceObject: {fileID: 0}
+@@@ -254,24 -254,24 +258,41 @@@
+    m_PrefabAsset: {fileID: 0}
+    serializedVersion: 6
+    m_Component:
+++<<<<<<< HEAD
+ +  - component: {fileID: 254651745}
+ +  m_Layer: 0
+ +  m_Name: ClueMarker
+++=======
++   - component: {fileID: 263013321}
++   m_Layer: 0
++   m_Name: ExitMarker
+++>>>>>>> Feature_Interaction
+    m_TagString: Untagged
+    m_Icon: {fileID: 0}
+    m_NavMeshLayer: 0
+    m_StaticEditorFlags: 0
+    m_IsActive: 1
+++<<<<<<< HEAD
+ +--- !u!4 &254651745
+++=======
++ --- !u!4 &263013321
+++>>>>>>> Feature_Interaction
+  Transform:
+    m_ObjectHideFlags: 0
+    m_CorrespondingSourceObject: {fileID: 0}
+    m_PrefabInstance: {fileID: 0}
+    m_PrefabAsset: {fileID: 0}
+++<<<<<<< HEAD
+ +  m_GameObject: {fileID: 254651744}
+ +  serializedVersion: 2
+ +  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+ +  m_LocalPosition: {x: -3, y: 1, z: 3}
+++=======
++   m_GameObject: {fileID: 263013320}
++   serializedVersion: 2
++   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++   m_LocalPosition: {x: 3, y: 1, z: 4}
+++>>>>>>> Feature_Interaction
+    m_LocalScale: {x: 1, y: 1, z: 1}
+    m_ConstrainProportionsScale: 0
+    m_Children: []
+@@@ -742,7 -742,7 +763,11 @@@ Transform
+    m_GameObject: {fileID: 1381373029}
+    serializedVersion: 2
+    m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+++<<<<<<< HEAD
+ +  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+++=======
++   m_LocalPosition: {x: 0, y: -0.4, z: 0}
+++>>>>>>> Feature_Interaction
+    m_LocalScale: {x: 12, y: 0.5, z: 12}
+    m_ConstrainProportionsScale: 0
+    m_Children: []
+@@@ -943,4 -943,4 +968,8 @@@ SceneRoots
+    - {fileID: 244751625}
+    - {fileID: 1744557780}
+    - {fileID: 1368697389}
+++<<<<<<< HEAD
+ +  - {fileID: 254651745}
+++=======
++   - {fileID: 263013321}
+++>>>>>>> Feature_Interaction
+diff --cc Assets/Scripts/Player/PlayerController.cs
+index fd203d4,e489b3e..0000000
+--- a/Assets/Scripts/Player/PlayerController.cs
++++ b/Assets/Scripts/Player/PlayerController.cs
+@@@ -20,7 -20,7 +20,11 @@@ public class PlayerController : MonoBeh
+          float h = Input.GetAxis("Horizontal");
+          float v = Input.GetAxis("Vertical");
+  
+++<<<<<<< HEAD
+ +        Vector3 movement = new Vector3(h, 0f, v).normalized;
+++=======
++         Vector3 movement = Vector3.ClampMagnitude(new Vector3(h, 0f, v), 1f);
+++>>>>>>> Feature_Interaction
+          transform.Translate(movement * speed * Time.deltaTime);
+      }
+  }
