@@ -1,0 +1,38 @@
+diff --git a/Packages/manifest.json b/Packages/manifest.json
+index 0e8eaef..533ee14 100644
+--- a/Packages/manifest.json
++++ b/Packages/manifest.json
+@@ -44,6 +44,7 @@
+     "com.unity.modules.vehicles": "1.0.0",
+     "com.unity.modules.video": "1.0.0",
+     "com.unity.modules.wind": "1.0.0",
+-    "com.unity.modules.xr": "1.0.0"
++    "com.unity.modules.xr": "1.0.0",
++    "com.unity.pipeline": "0.8.0-exp.1"
+   }
+ }
+diff --git a/ProjectSettings/EditorBuildSettings.asset b/ProjectSettings/EditorBuildSettings.asset
+index 513e6f1..95510c9 100644
+--- a/ProjectSettings/EditorBuildSettings.asset
++++ b/ProjectSettings/EditorBuildSettings.asset
+@@ -6,7 +6,7 @@ EditorBuildSettings:
+   serializedVersion: 2
+   m_Scenes:
+   - enabled: 1
+-    path: Assets/Scenes/SampleScene.unity
++    path: Assets/00_Scenes/MainScene.unity
+     guid: 99c9720ab356a0642a771bea13969a05
+   m_configObjects:
+     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+diff --git a/ProjectSettings/ShaderGraphSettings.asset b/ProjectSettings/ShaderGraphSettings.asset
+index e66042a..ce8c243 100644
+--- a/ProjectSettings/ShaderGraphSettings.asset
++++ b/ProjectSettings/ShaderGraphSettings.asset
+@@ -13,6 +13,7 @@ MonoBehaviour:
+   m_Name: 
+   m_EditorClassIdentifier: 
+   shaderVariantLimit: 128
++  overrideShaderVariantLimit: 0
+   customInterpolatorErrorThreshold: 32
+   customInterpolatorWarningThreshold: 16
+   customHeatmapValues: {fileID: 0}
