@@ -1,0 +1,28 @@
+PASS Scene has a GameManager
+PASS Player collider cannot cross room wall
+PASS Pause suspends exploration timer
+PASS Escape closes pause
+PASS All ten interactable objects exist
+PASS Code cannot bypass missing power
+PASS Generator requires the fuse
+PASS Exit remains locked without the key
+PASS Interaction ray reaches Fuse (hit Núcleo portátil)
+PASS Interaction ray reaches Generator (hit Alojamiento vacío)
+PASS Fuse is collected once
+PASS Generator consumes fuse and enables power
+PASS Interaction ray reaches Clue (hit Fondo)
+PASS Interaction ray reaches Clue (hit Fondo)
+PASS Interaction ray reaches Clue (hit Fondo)
+PASS Interaction ray reaches Letter (hit Carta de Vega)
+PASS Interaction ray reaches Clue (hit Fondo)
+PASS All four clues and the letter are recorded
+PASS Wrong code does not open chest
+PASS Correct code opens chest
+PASS Key revealed after lid animation
+PASS Chest lid opens upward
+PASS Interaction ray reaches Key (hit Llave del observatorio)
+PASS Interaction ray reaches Door (hit Panel superior)
+PASS Key enters inventory
+PASS Victory after exit door animation
+PASS Only powered code submissions count as attempts
+RESULT: PASSED
